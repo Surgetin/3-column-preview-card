@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark_cyan: hsl(179, 100%, 13%);
+
+    --bg-color: hsl(0, 0%, 95%);
+
+    --p-color: hsla(0, 0%, 100%, 0.55);
+
+    --border-radius: 10px
+}
+
+body {
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--bg-color);
+    font-size: 2.3em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--p-color);
+    line-height: 1.5;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.cyan {
+    background-color: var(--cyan);
+}
+
+.dark_cyan {
+    background-color: var(--dark_cyan);
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem 3rem 3rem 3rem;    
+}
+
+.section {
+    padding: 2.5rem;
+    height: 450px;
+    width: 290px;
+}
+
+.section.orange {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.section.dark_cyan {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.section img {
+    margin-bottom: 2em;
+}
+
+.btn-orange {
+    color: var(--orange);
+}
+
+.btn-cyan {
+    color: var(--cyan);
+}
+
+.btn-btn-dark_cyan {
+    color: var(--dark_cyan);
+}
+
+.btn{
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 4.5rem;
+    padding: 0.7rem 1.8rem;
+    border: 3px solid var(--bg-color);
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color: var(--bg-color);
+    background-color: transparent;
+}
+
+@media screen and (max-width: 840px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section.orange {
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+        border-bottom-left-radius: 0;
+    }
+    
+    .section.dark_cyan {
+        border-bottom-left-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+        border-top-right-radius: 0;
+    }
+}
+
+
