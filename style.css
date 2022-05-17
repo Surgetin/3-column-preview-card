@@ -13,11 +13,11 @@
     --dark_cyan: hsl(179, 100%, 13%);
     --bg-color: hsl(0, 0%, 95%);
     --p-color: hsla(0, 0%, 100%, 0.55);
-
     --border-radius: 10px
 }
 
 body {
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: 400;
     background-color: var(--bg-color);
@@ -31,7 +31,6 @@ h1 {
 }
 
 p {
-    font-family: 'Lexend Deca', sans-serif;
     color: var(--p-color);
     line-height: 1.5;
 }
@@ -92,7 +91,6 @@ p {
 }
 
 .btn{
-    font-family: 'Lexend Deca', sans-serif;
     margin-top: 4.5rem;
     padding: 0.7rem 1.8rem;
     border: 3px solid var(--bg-color);
